@@ -1,19 +1,23 @@
 package objects
 
-import kotlin.math.sqrt
-
 class Pentagon private constructor(builder: Builder) : GeometricFigure(builder) {
 
-    private val sideLength: Double = builder.sideLength ?: 0.0
+    private var side: Double = builder.side ?: 0.0
+    private var height: Double = builder.height ?: 0.0
 
     override fun calculateArea(): Double {
-        return 0.25 * sqrt(5.0 * (5.0 + 2.0 * sqrt(5.0))) * sideLength * sideLength
+        return (5 * side * height) / 2
     }
 
-    class Builder : GeometricFigure.Builder() {
-        var sideLength: Double? = null
+    fun setSide(side: Double) = apply { this.data1 = side }
+    fun setHeight(height: Double) = apply { this.data1 = height }
 
-        fun sideLength(sideLength: Double) = apply { this.sideLength = sideLength }
+    class Builder : GeometricFigure.Builder() {
+        var side: Double? = null
+        var height: Double? = null
+
+        fun side(side: Double) = apply { this.side = side }
+        fun height(height: Double) = apply { this.height = height }
 
         override fun build(): Pentagon {
             return Pentagon(this)
