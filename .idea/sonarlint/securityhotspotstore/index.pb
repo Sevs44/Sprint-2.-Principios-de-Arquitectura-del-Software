@@ -19,3 +19,9 @@ T
 $app/src/main/java/objects/objects.kt,a\b\ab2a5172453ea82568752e79c432365b993ca5fd
 \
 ,app/src/main/java/objects/GeometricFigure.kt,e\4\e46c253be35f5f736700d1d88590e5dda2ff242e
+S
+#app/src/main/java/objects/Circle.kt,9\3\930c0ba34ae12c6d89a91147ce53db80062cac21
+T
+$app/src/main/java/objects/Diamond.kt,6\f\6f9195675280c9e635d277db0d01aee5d0271572
+U
+%app/src/main/java/objects/Pentagon.kt,1\5\1506e13b8b0a93406fd4e80f253e2d959088eeb0
