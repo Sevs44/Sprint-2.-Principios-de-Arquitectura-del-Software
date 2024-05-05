@@ -21,6 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MainActivityAreaCircle" />
+        <activity android:name=".MainActivityAreaDiamond" />
+        <activity android:name=".MainActivityAreaPentagon" />
     </application>
 
 </manifest>
